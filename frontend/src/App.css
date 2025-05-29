@@ -1,0 +1,137 @@
+body {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 430px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 32px 0 rgba(80,130,255,0.18);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  color: #4070f4;
+  letter-spacing: 1px;
+}
+
+.add-task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.add-task-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+.add-task-input:focus {
+  border-color: #4070f4;
+  outline: none;
+}
+
+.add-task-btn {
+  background: #4070f4;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 1rem;
+}
+.add-task-btn:hover {
+  background: #2955c8;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background: #f6faff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px 0 rgba(80,130,255,0.07);
+  transition: box-shadow 0.2s;
+}
+.task-item:last-child {
+  margin-bottom: 0;
+}
+
+.task-checkbox {
+  accent-color: #4070f4;
+  width: 22px;
+  height: 22px;
+  margin-right: 1rem;
+}
+
+.task-title {
+  flex: 1;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.task-title.completed {
+  text-decoration: line-through;
+  color: #b1b1b1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-action-btn {
+  background: none;
+  border: none;
+  color: #4070f4;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 7px;
+  transition: color 0.2s;
+  border-radius: 5px;
+}
+.task-action-btn.edit:hover {
+  color: #20b486;
+  background: #eafff2;
+}
+.task-action-btn.delete:hover {
+  color: #ef4444;
+  background: #ffeaea;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+@media (max-width: 580px) {
+  .app-container {
+    padding: 1.3rem 0.6rem 2rem 0.6rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
