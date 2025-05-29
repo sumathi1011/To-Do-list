@@ -38,7 +38,7 @@ Task/
 ### 1. Clone the Repository
 
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/Udhayaboopathi/Fullstack_Web_Development-_Arttifai_Tech_batch_8.git
 cd Task
 ```
 
